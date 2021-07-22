@@ -48,7 +48,13 @@ body {
   background-color: black ; /*#212529*/
   -webkit-text-size-adjust: 100%;
   -webkit-tap-highlight-color: #fff;
+  display: -moz-box; /* Firefox*/
+  display: -webkit-box; /* Chrome */
+  display: -ms-flexbox; /* IE 10 */
+  width: 100%;
+  height: auto;
 }
+
 .capti{
   font-size: 2.5rem;
 }
@@ -67,6 +73,11 @@ body {
 }
 .name{
   font-size: 4rem !important;
+}
+@media (max-width: 900px){
+  .name{
+    font-size: 2rem !important;
+  }
 }
 hr {
   margin: 1rem 0;
